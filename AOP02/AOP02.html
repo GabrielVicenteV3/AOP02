@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life, Books & Music</title>
+    <style>
+        /* Estilo básico para o layout */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff69b4, #8a2be2);
+            color: #131313;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #fd02dc, #8400ffc4);
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f0e68c;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #000000;
+        }
+        .content-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .content-grid div {
+            flex: 1 1 calc(33.333% - 20px);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .content-grid img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: #080808;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            background: rgba(247, 197, 252, 0.979);
+            color: #020202;
+        }
+        form button {
+            background: rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        form button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Life, Books & Music</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#life">Life Style</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Home -->
+    <main id="home">
+        <section>
+            <h2>Bem-vindo ao Life, Books & Music</h2>
+            <p>
+                Explore o melhor do estilo de vida, mergulhe em universos literários fascinantes e curta as trilhas sonoras que marcam momentos especiais. Nosso blog foi criado para inspirar e conectar você com conteúdos únicos sobre Life Style, Livros e Músicas.
+            </p>
+        </section>
+    </main>
+
+    <!-- Seção Life Style -->
+    <main id="life">
+        <section>
+            <h2>Life Style</h2>
+            <p>Dicas para uma vida equilibrada, saudável e cheia de inspiração. Descubra como transformar hábitos simples em grandes mudanças.</p>
+            <div class="content-grid">
+                <div>
+                    <img src="Imagens/_academia.jpg" alt="Life Style">
+                    <p>Como manter uma rotina balanceada mesmo com uma agenda lotada.</p>
+                </div>
+                <div>
+                    <img src="Imagens/Alimentaçao.jpg" alt="Saúde">
+                    <p>Alimentação, exercícios e bem-estar emocional para viver melhor.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Seção Books -->
+    <main id="books">
+        <section>
+            <h2>Books</h2>
+            <p>Mergulhe em mundos fascinantes e histórias incríveis com nossas indicações de livros.</p>
+            <div class="content-grid">
+                <div>
+                    <img src="Imagens/Livros2.jpg" alt="Livros">
+                    <p>Resenhas detalhadas dos melhores livros de ficção e não-ficção.</p>
+                </div>
+                <div>
+                    <img src="Imagens/livro 1.jpg" alt="Clássicos">
+                    <p>Clássicos atemporais que todos deveriam ler ao menos uma vez.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Seção Music -->
+    <main id="music">
+        <section>
+            <h2>Music</h2>
+            <p>Descubra playlists exclusivas e histórias por trás das músicas que marcaram época.</p>
+            <div class="content-grid">
+                <div>
+                    <img src="Imagens/Musica 2.jpg" alt="Músicas">
+                    <p>As trilhas sonoras que embalam seus momentos especiais.</p>
+                </div>
+                <div>
+                    <img src="Imagens/Musica.jpg" alt="Artistas">
+                    <p>Conheça os artistas que estão redefinindo a indústria musical.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Seção Contatos -->
+    <main id="contatos">
+        <section>
+            <h2>Entre em Contato</h2>
+            <p>Envie suas dúvidas, sugestões ou colaborações. Vamos adorar ouvir você!</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Life, Books & Music. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
